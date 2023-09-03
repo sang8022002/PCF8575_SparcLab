@@ -1,4 +1,4 @@
-# Install script for directory: C:/Espressif/frameworks/pcf8575_Test/component/i2cdev
+# Install script for directory: C:/Espressif/frameworks/github/PCF8575_SparcLab/pcf8575_Test/component/i2cdev
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

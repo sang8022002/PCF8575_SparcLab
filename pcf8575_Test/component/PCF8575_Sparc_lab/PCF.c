@@ -78,8 +78,10 @@ esp_err_t pcf8575_readOnePin(pcf8575_t *pcf8575, uint16_t pin, bool *state){
 
 
 // Hàm xử lý ngắt
-void IRAM_ATTR interrupe_handler(void *arg){
+void IRAM_ATTR interrupe_handler(Callback callback){
     // Writing function you want
+    callback();
+
 }
 
 // Hàm cấu hình interrupt

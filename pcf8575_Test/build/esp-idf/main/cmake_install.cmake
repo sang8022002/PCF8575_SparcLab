@@ -1,4 +1,4 @@
-# Install script for directory: C:/Espressif/frameworks/pcf8575_Test/main
+# Install script for directory: C:/Espressif/frameworks/github/PCF8575_SparcLab/pcf8575_Test/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

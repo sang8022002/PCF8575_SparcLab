@@ -5,15 +5,15 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "C:/Espressif/frameworks/esp-idf-v4.4.4/components/bootloader/subproject"
-  "C:/Espressif/frameworks/pcf8575_Test/build/bootloader"
-  "C:/Espressif/frameworks/pcf8575_Test/build/bootloader-prefix"
-  "C:/Espressif/frameworks/pcf8575_Test/build/bootloader-prefix/tmp"
-  "C:/Espressif/frameworks/pcf8575_Test/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/Espressif/frameworks/pcf8575_Test/build/bootloader-prefix/src"
-  "C:/Espressif/frameworks/pcf8575_Test/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Espressif/frameworks/github/PCF8575_SparcLab/pcf8575_Test/build/bootloader"
+  "C:/Espressif/frameworks/github/PCF8575_SparcLab/pcf8575_Test/build/bootloader-prefix"
+  "C:/Espressif/frameworks/github/PCF8575_SparcLab/pcf8575_Test/build/bootloader-prefix/tmp"
+  "C:/Espressif/frameworks/github/PCF8575_SparcLab/pcf8575_Test/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Espressif/frameworks/github/PCF8575_SparcLab/pcf8575_Test/build/bootloader-prefix/src"
+  "C:/Espressif/frameworks/github/PCF8575_SparcLab/pcf8575_Test/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Espressif/frameworks/pcf8575_Test/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Espressif/frameworks/github/PCF8575_SparcLab/pcf8575_Test/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()

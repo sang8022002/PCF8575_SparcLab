@@ -41,6 +41,7 @@ typedef struct {
     int gpio_interrupt;
 } pcf8575_t ;
 
+typedef void (*Callback)(void);
 #define BV(x) (1 << (x))
 /**
  * @brief Initalize device descriptor
@@ -94,7 +95,11 @@ esp_err_t pcf8575_readOnePin(pcf8575_t *pcf8575, uint16_t pin, bool *state);
  * @return ESP_OK
 */
 esp_err_t pcf8575_writeOnePin(pcf8575_t *pcf8575, uint16_t pin, bool state);
-
+/**
+ *@brief When there is an interrupt, this interrupt function will call the input function
+ *@param callback the function will execute when an interrupt occurs
+ */
+void IRAM_ATTR interrupe_handler(Callback callback);
 /**
  * @brief Funciton interrupt initialize
  * @param pcf8575 Struct of pcf8575
